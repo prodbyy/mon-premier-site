@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 0 60px;
+    align-items: center;
+    background: url(https://t4.ftcdn.net/jpg/02/05/01/41/360_F_205014194_jXn6FXUBQo2iukZXBHECAK3RwEuM83Fh.jpg), #e5e7e6;
+    background-size: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+footer a {
+    color: rgb(255, 163, 25);
+    font-weight: 600;
+}
+
+#bienvenue {
+    background-image: url(../composants/japan\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 20px 0 0;
+    text-align: center;
+    font-family: "Noto Sans";
+}
+
+#top {
+    margin: 20px 0 10px;
+}
+
+header {
+    font-size: 60px;
+    font-family: "Pacifico";
+    color: white;
+    text-shadow: 0 0 20px black;
+    /* padding-top: 300px; */
+    padding-left: 120px;
+}
+
+
+
+#slogan {
+    display: block;
+    font-family: "Roboto", arial, sans-serif;
+    text-shadow: -0.5px 2.5px 10px black;
+    padding: 5px;
+    font-size: 30px;
+}
+
+#tokyo {
+    background-image: url(https://a.cdn-hotels.com/gdcs/production0/d1098/88ada5d5-e2f3-411a-801e-69f62c775e17.jpg);
+    grid-row: 1 / 3;
+}
+
+#kyoto {
+    background-image: url(https://images.ctfassets.net/bth3mlrehms2/1i0vZWcD587SaN9Udo6sf5/f2f82a33415bcb5381b1169ef0dc9070/Japan_Kyoto_Un_cerisier_en_fleur_dans_une_rue_de_Kyoto.jpg?w=3863&h=2172&fl=progressive&q=50&fm=jpg);
+    grid-column: 2 / 4;
+}
+
+#osaka {
+    background-image: url(https://www.petitfute.com/medias/mag/36335/originale/AdobeStock_291927451-1-1024x683.jpeg);
+}
+
+#nara {
+    background-image: url(https://www.nippon.com/fr/ncommon/contents/guide-to-japan/2442506/2442506.jpg);
+}
+
+.txt {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destinations{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 70px 10px;
+}
+
+.destination__names {
+    padding: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    text-shadow: 0 0 5px black;
+}
+
+.destination {
+    display: flex;
+    min-width: 400px;
+    min-height: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    border-radius: 40px;
+    transition: all 0.5s ease;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px black;
+    background-image: 0.5px;
+    color: rgb(0, 0, 0);
+    opacity: 0.90;
+}
+
+#flexbox__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#voirplus {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: right;
+    color: rgb(255, 165, 31);
+    gap: 0;
+    transition: all 0.4s ease;
+}
+
+#voirplus:hover {
+    gap: 10px;
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+}
+
+@media all and (max-width: 1350px) {
+    #bienvenue {
+        background-size: cover;
+    }
+    .destinations{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 40px;
+        padding: 20px 70px 10px;
+    }
+    #tokyo {
+        grid-row: auto;
+    }
+    
+    #kyoto {
+        grid-column: auto;
+    }
+    
+    #osaka {
+        grid-row: auto;
+    }
+    
+    #nara {
+        grid-row: auto;
+    }
+    .container {
+        width: 800px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .destinations{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 40px;
+        padding: 20px 70px 10px;
+    }
+    #tokyo {
+        grid-row: auto;
+    }
+    
+    #kyoto {
+        grid-row: auto;
+    }
+    #bienvenue {
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        background-position: center;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+    h1 {
+        font-size: 20px;
+        margin: 10px 0 0;
+        text-align: center;
+        font-family: "Noto Sans";
+    }
+    header {
+        font-size: 30px;
+        font-family: "Pacifico";
+        color: white;
+        text-shadow: 0 0 20px black;
+        /* padding-top: 300px; */
+        padding-left: 60px;
+    }
+    #slogan {
+        display: block;
+        font-family: "Roboto", arial, sans-serif;
+        text-shadow: -0.5px 2.5px 10px black;
+        padding: 5px;
+        font-size: 30px;
+    }
+    footer{
+        width: 900px;
+    }
+    .container {
+        width: 900px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #bienvenue {
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        background-position: center;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+    h1 {
+        font-size: 20px;
+        margin: 10px 0 0;
+        text-align: center;
+        font-family: "Noto Sans";
+    }
+    header {
+        font-size: 30px;
+        font-family: "Pacifico";
+        color: white;
+        text-shadow: 0 0 20px black;
+        /* padding-top: 300px; */
+        padding-left: 60px;
+    }
+    #slogan {
+        display: block;
+        font-family: "Roboto", arial, sans-serif;
+        text-shadow: -0.5px 2.5px 10px black;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .container {
+        width: 900px;
+    }
+}

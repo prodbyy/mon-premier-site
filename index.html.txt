@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- infos de la page -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Premier Site</title>
+    <link rel="icon" href="composants/favicon (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="design/style.css">
+</head>
+
+    
+
+<body>
+    <!-- contenu de la page -->
+    <section id="bienvenue" class="container">
+        <div class="container">
+            <header>
+                JAPISM
+                <span id="slogan">L'expert en voyages au pays du soleil levant.</span>
+            </header>
+        </div>
+    </section>
+
+    <section class="contenu container">
+        <div class="txt">
+            <h1>Nos meilleures destinations</h1>
+            <p id="top">Séléctionnez votre futur destination dans une petite sélection des villes les plus demandées par nos clients.</p>
+        </div>
+
+        <section class="destinations">
+
+            <div id="tokyo" class="destination"><p class="destination__names">Tokyo</p></div>
+
+            <div id="kyoto" class="destination"><p class="destination__names">Kyoto</p></div>
+
+            <div id="osaka" class="destination"><p class="destination__names">Osaka</p></div>
+
+            <div id="nara" class="destination"><p class="destination__names">Nara</p></div>
+            
+        </section>
+        <!-- EN SAVOIR PLUS -->
+        
+        <div style="text-align: right; margin-right: 60px;">
+            <a href="" id="voirplus">Voir plus<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-4 4l4-4m-4-4l4 4"/></svg></a>
+        </div>
+        
+    </section>
+
+
+    <footer>
+        <div class="container" id="flexbox__foot">
+            <p>2024 © JAPISM</p>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </footer>
+
+
+</body>
+</html>
